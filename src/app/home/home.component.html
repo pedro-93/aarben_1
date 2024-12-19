@@ -1,0 +1,8 @@
+<div>
+  <h1>Bienvenido</h1>
+  <input [(ngModel)]="rutTrabajador" placeholder="Ingrese su RUT" />
+  <button (click)="consultarRegistro()">Consultar Registro</button>
+  <button (click)="marcarEntrada()">Marcar Entrada</button>
+  <button (click)="marcarSalida()">Marcar Salida</button>
+  <p *ngIf="entrada">Tiempo trabajado: {{ tiempoTrabajado }} segundos</p>
+</div>

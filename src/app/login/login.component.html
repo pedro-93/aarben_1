@@ -1,0 +1,8 @@
+<div>
+  <h2>Inicio de Sesión</h2>
+  <input [(ngModel)]="rut" placeholder="Ingrese su RUT" />
+  <button (click)="iniciarSesion()">Iniciar Sesión</button>
+
+  <!-- Mostrar mensaje de error si existe -->
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+</div>
